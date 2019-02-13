@@ -6,7 +6,9 @@ import { Field, reduxForm } from 'redux-form';
 
 class Signup extends Component {
   onSubmit = (formProps) => {
-    this.props.signup(formProps);
+    this.props.signup(formProps, () => {
+      this.props.history.push('/feature');
+    });
   };
 
   render() {
