@@ -1,5 +1,6 @@
 import App from 'components/App';
 import Signup from 'components/auth/Signup';
+import Feature from 'components/Feature';
 import Welcome from 'components/Welcome';
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -22,6 +23,7 @@ ReactDOM.render(
       <App>
         <Route exact path='/' component={ Welcome } />
         <Route path='/signup' component={ Signup } />
+        <Route path='/feature' component={ Feature } />
       </App>
     </BrowserRouter>
   </Provider>
