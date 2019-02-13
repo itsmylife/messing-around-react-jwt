@@ -2,9 +2,9 @@ import React from 'react';
 
 const Welcome = () => {
   return (
-    <h3>
+    <p>
       Welcome that awesome application
-    </h3>
+    </p>
   );
 };
 
